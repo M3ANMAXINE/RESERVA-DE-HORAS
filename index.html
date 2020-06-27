@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafío I - Formulario de Validación</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>RESERVE SU HORA MEDICA</h1>
+    <form class="form-register" onsubmit="return agendar();">
+        <div class="contenedor-inputs">
+            <input type="text" id="rut" name="rut" placeholder="Rut 111111111 o 11.111.111-1" class="inputcss">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="inputcss">
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellido" class="inputcss">
+            <input type="text" id="edad" name="edad" placeholder="Edad" class="inputcss">
+            <input type="email" id="correo" name="correo" placeholder="Correo" class="inputcss ">
+            <select class="inputspecial" id="opciones" name="opciones">
+                <option value="Broncopulmunar">Broncopulmunar</option>
+                <option value="Cardiología">Cardiología</option>
+                <option value="Cirugía">Cirugía</option>
+                <option value="Dental"> <span> Dental</span></option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Endocrinología">Endocrinología</option>
+                <option value="Medicina General">Medicina General</option>
+                <option value="Traumatología">Traumatología</option>
+              </select>
+              <input type="text" id="date" name="date" placeholder="Fecha" class="inputcss ">
+             <!-- <input class="inputspecial2" type="date" id="start" name="trip-start" value="2020-06-25" min="2020-06-25" max="2020-12-31"> -->
+                <select class="inputspecial" id="opciones2" name="opciones2">
+                <option value="08:00"> <span> 08:00</span></option>
+                <option value="08:30">08:30</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+              </select>
+            <input type="submit" value="Reservar" class="btn-enviar">
+        </div>
+    </form> 
+ <script type="text/javascript" src="agendar.js"></script>   
+</body>
+</html>
